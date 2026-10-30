@@ -17,8 +17,8 @@ Abra um terminal na pasta deste projeto:
 
 ```powershell
 py -m venv .venv
-.venv\Scripts\python -m pip install -r requirements.txt
-.venv\Scripts\python -m streamlit run app.py
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
 No Linux/macOS, substitua os dois últimos comandos por `.venv/bin/python -m pip install -r requirements.txt` e `.venv/bin/python -m streamlit run app.py`.
@@ -61,7 +61,7 @@ Cada opção corresponde a uma trilha. O motor ativa regras independentes, permi
 Execute:
 
 ```powershell
-.venv\Scripts\python -m pytest -v
+.\.venv\Scripts\python.exe -m pytest -v
 ```
 
 As quatro personas principais de validação são:
@@ -81,3 +81,10 @@ Os testes também exercitam as outras seis trilhas, o perfil iniciante, entradas
 - `tests/test_personas.py`: testes das personas.
 
 > Trabalho didático: a pontuação representa regras ativadas, não uma probabilidade de sucesso profissional.
+
+## Relatório do projeto
+
+O relatório apresenta o desenvolvimento, o funcionamento,
+as regras de inferência e os testes do sistema especialista.
+
+📄 [Visualizar relatório completo](docs/Relatorio_Consultor_Carreiras_TI.pdf)
